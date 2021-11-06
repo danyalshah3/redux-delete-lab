@@ -12,7 +12,7 @@ class Bands extends Component {
     
     render() {
         //  console.log(this.props.bands)
-        //  console.log(this.renderBands())
+         console.log(this.renderBands())
         return(
             <div>
           <ul>

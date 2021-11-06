@@ -15,7 +15,7 @@ class BandsContainer extends Component {
     )
   }
 }
-
+//  console.log(this.props.bands)
 const mapStateToProps = (state) => {
   //  console.log(state)
   return {bands: state.bands}
