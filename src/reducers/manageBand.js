@@ -11,6 +11,11 @@ export default function manageBand(state = {
  const bandName =  { id: uuid(), name: action.name }
     // debugger
       return {...state, bands: [...state.bands, bandName]}
+
+      case "DELETE_BAND":
+        // const filteredArray = state.bands.filter((band) => band.id !== action.id)
+      // return {filteredArray};
+      return {bands: state.bands.filter((band) => band.id !== action.id)}
     default:
       return state
   
